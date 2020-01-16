@@ -1,0 +1,249 @@
+ body {
+    display: flex;
+    flex-direction:column;
+    overflow:hidden;
+    min-width: 1017px;
+    background-image: url("https://allretrojordans.com/image/197320-full_rose-gold-aesthetic-cute-tumblr-wallpapers-desktop.jpg");
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtmwo8OBkmnToOEh91LGJiH4Qw0LaWrEjJBGEeGsqhfeK77W4Z"); */
+    /* align-content: space-between; */
+} 
+
+#top-container {
+    display:flex;
+    flex-direction: row;
+    margin-left: 2%;
+    font-family: 'Cinzel', serif;
+    font-size: larger;
+    text-decoration: underline;
+    margin-top: -1%;
+}
+
+#middle-container{
+    margin-top: 0.2%;
+    width: 75%;
+    box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.555);
+    margin: 0 auto 0.5% auto;
+}
+
+#left{
+    display:flex;
+    margin-left: 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+ #title-container {
+    display: flex;
+}
+#stats-container{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+#bottom-container{
+    display:flex;
+    flex-direction:row;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 0.5%;
+    width: 75%;
+    position: relative;
+    box-shadow: 0 0 20px 2px rgb(90, 90, 90);
+}
+
+
+#game-container {
+    background-repeat: no-repeat;
+    background-image: url("https://giffiles.alphacoders.com/195/19518.gif");
+    background-size: contain;
+    height: 32.05rem;
+    width: 57rem;
+    position: inherit;
+    overflow: hidden;
+    min-width: 57rem;
+    min-height: 32.05rem;
+    margin: 1%;
+}
+
+.dot{
+    position: absolute;
+    overflow: hidden;
+    color:red;
+}
+
+.dot ~ .dot {
+    color: inherit;
+}
+
+.dead {
+    animation: spin 0.5s linear forwards, float 3s linear forwards, blinker 2.5s linear forwards;
+    position: absolute;
+    /* animation-fill-mode: forwards; */
+    /* animation: float 1s linear; */
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+@keyframes float {
+    to {
+        top: -25%;
+    }
+}
+
+@keyframes blinker {
+    to {
+      opacity: 0;
+    }
+  }
+
+
+
+.words {
+    position: absolute;
+    top: 27%;
+    left: 13%;
+    font-weight: bold;
+}
+
+#start-button {
+    position: absolute;
+    display:block;
+    margin-top: 25%;
+    margin-left: 40%;
+    height: 15%;
+    width: 20%;
+    font-family: 'Cinzel', serif;
+    font-size:xx-large;
+    /* background-image: url("https://media.gettyimages.com/vectors/gold-background-metal-texture-vector-id617749020?s=612x612");
+    border-radius: 15%;
+    box-shadow: 0 0 5px 2px rgb(53, 52, 52);  */
+}
+
+button {
+    font-family: 'Cinzel', serif;
+    font-size:large;
+    background-image: url("https://media.gettyimages.com/vectors/gold-background-metal-texture-vector-id617749020?s=612x612");
+    border-radius: 15%;
+    box-shadow: 0 0 5px 2px rgb(53, 52, 52);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#overlap{
+    position: absolute;
+    bottom: 10%;
+    margin-left: 0.5%;
+    overflow: hidden;
+}
+
+h2{
+    font-family: 'Cinzel', serif;
+    font-size: 170%;
+    
+}
+
+#popUp-container{
+    display:flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-image: url("https://allretrojordans.com/image/197320-full_rose-gold-aesthetic-cute-tumblr-wallpapers-desktop.jpg");
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 25%;
+    height: 40%;
+    width: 50%;
+    box-shadow: 0 0 20px 7px black;
+    z-index: -1;
+}
+
+#popUpFail-container {
+    display:flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-image: url("https://allretrojordans.com/image/197320-full_rose-gold-aesthetic-cute-tumblr-wallpapers-desktop.jpg");
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 25%;
+    height: 40%;
+    width: 50%;
+    box-shadow: 0 0 20px 7px black;
+    text-align: center;
+    z-index: -1;
+}
+
+#popUpStats-container{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("https://allretrojordans.com/image/197320-full_rose-gold-aesthetic-cute-tumblr-wallpapers-desktop.jpg");
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 25%;
+    height: 40%;
+    width: 50%;
+    box-shadow: 0 0 20px 7px black;
+     z-index: -1;
+}
+
+#next-level{
+    margin: 5%;
+}
+
+#exit{
+    margin: 5%;
+}
+
+#view-stats{
+    margin: 5%;
+}
+
+#exit2{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+/* #pir {
+    height: 100px;
+    width: 95px;
+}
+
+#hammer {
+    height: 125px;
+    width: 275px;
+} */
+
+/* #boss {
+    height: 170x;
+    width: 325px;
+} */
+
+/* #ghost {
+    height: 95px;
+    width: 225px;
+} */
+
+/* #tiger {
+    height: 95px;
+    width: 225px;
+} */
+
+#mutant {
+    height: 95px;
+    width: 225px;
+}
+
+

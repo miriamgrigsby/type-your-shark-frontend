@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TyperShark</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css" />
+</head>
+
+<body></body>
+    <div id="top-container">
+        <div id="title-container">
+            <h1>Type-Your Shark</h1>
+        </div>
+    </div>
+    <div id="middle-container">
+        <div id="stats-container">
+            <h2 id="points">Points: <span id="underline1" style="text-decoration: underline;">0</span></h2>
+            <h2 id="sharksKilled">Sharks Killed: <span id="underline2" style="text-decoration: underline;">0</span></h2>
+            <h2 id="difLevel">Difficulty Level: <span id="underline4" style="text-decoration: underline;"></span></h2>
+            <h2 id='timer'>Timer: <span id="underline3" style="text-decoration: underline;">0</span></h2>
+        </div>
+    </div>
+    <div id="bottom-container">
+        <div id="left">
+            <button id="easy-button">EASY</button>
+            <button id="medium-button">MEDIUM</button>
+            <button id="hard-button">HARD</button>
+        </div>
+        <div id="game-container">
+            <button id="start-button">START</button>
+            <div id="popUp-container">
+                <button id="next-level">Continue</button>
+                <button id="exit">RESTART</button>
+                <button id="view-stats">View Stats</button>
+            </div>
+            <div id="popUpFail-container">
+                <h2>GAME OVER</h2>
+                <button id="view2-stats">View Stats</button>
+                <button id="exit3">RESTART</button>
+            </div>
+            <div id="popUpStats-container">
+                <h2 id='finalPoints'><span id="underline5" style="text-decoration: underline;"></span></h2>
+                <h2 id='totalSharksKilled'><span id="underline6" style="text-decoration: underline;"></span></h2>
+                <button id="exit2">RESTART</button>
+            </div>
+            <img src="resources/diver.png" id="overlap">
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src='main.js'></script>
+</body>
+
+</html>
