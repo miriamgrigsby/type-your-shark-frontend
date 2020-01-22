@@ -6,9 +6,11 @@ A simple typing game with 3 levels of difficulty and 3 challenge levels to test 
 
 Type Your Shark is loosely based on the original flash game Typer Shark that no longer exists. It was a game used to increase typing speed and accuracy. Type Your Shark is my take on the original to target programmers. I achieved this with long and obscure words and a "spell-check" level to sharpen necessary programming skills in 3 challenging ways. The goal was to cut down on typos and mistakes to maximize the individual's coding flow, while still having fun. 
 
+![Screenshot](screenshot.png)
+
 ## Getting Started
 
-If you wish to fork/clone the repo, do so in conjunction with the backend found at [BackEnd Repo](https://github.com/miriamgrigsby/type-your-shark-backend). 
+If you wish to fork/clone the repo, do so in conjunction with the frontend found at [FrontEnd Repo](https://github.com/miriamgrigsby/type-your-shark-frontend). 
 
 ### Ruby Version 
 
@@ -44,6 +46,10 @@ The app front is built with Vanilla JavaScript and jQuery requires the following
 
 Type Your Shark features animations and simple game functionality using plain JavaScript and CSS. Game and user stats  update and delete with optimistic and pessimistic rendering to improve user experience. The app also has full Authentication using JWT and is a Single-Page-App. 
 
+![Screenshot](avgStats.png)
+
+![Screenshot](gameStats.png)
+
 ### Words API
 
 The words appended to the creatures are randomly chosen from an imported JavaScript file words.js with 170,000+ words. 
@@ -63,9 +69,13 @@ Each level varies in difficulty through the following properties:
     
 Sharks begin to swim towards the diver. The objective is type the letters on the red shark. Each letter is checked for correctness and turns green upon meeting this condition. Once the whole word is correct, the shark is removed (no need to press enter), and the next shark turns red. Kill all the sharks on the screen before they reach the diver. Even if time runs out, you must kill all the sharks. 
 
+![Screenshot](level1.png)
+
 ### Speed Round (Level 2)
 
 After completing level 1, the user is brought to a bonus speed round. Type all the words as quickly as you can. Careful, typing the wrong letter decrements your time. Type the whole word correctly and gain a little time. Play until the time runs out, then collect your ruby from the treasure chest to move on. This level cannot be lost.
+
+![Screenshot](level2.png)
 
 ### Boss Round (Level 3
 
