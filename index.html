@@ -13,50 +13,112 @@
 </head>
 
 <body></body>
-    <div id="top-container">
-        <div id="title-container">
-            <h1>Type-Your Shark</h1>
+<div id="top-container">
+    <div id="title-container">
+        <h1>Type-Your Shark</h1>
+    </div>
+    <div id="auth-container">
+        <div id='tester'>
+            <form id='auth-login' autocomplete="off">
+                <input id="name" type='text' name='username' placeholder='username' />
+                <input id="password" type='text' name='password' placeholder='password' />
+                <input type='submit' id="loginSubmit-button" value="Login"
+                    style="font-family: 'Cinzel', serif;
+                font-size: large; background-image: url(https://media.gettyimages.com/vectors/gold-background-metal-texture-vector-id617749020?s=612x612); border-radius: 15%; box-shadow: 0 0 5px 2px rgb(53, 52, 52);">
+                </>
+            </form>
+            <form id='auth-signup' autocomplete="off">
+                <input id="name2" type='text' name='username' placeholder='username' />
+                <input id="password2" type='text' name='password' placeholder='password' />
+                <input type='submit' id="signupSubmit-button" value="Sign-Up"
+                    style="font-family: 'Cinzel', serif;
+                font-size: large; background-image: url(https://media.gettyimages.com/vectors/gold-background-metal-texture-vector-id617749020?s=612x612); border-radius: 15%; box-shadow: 0 0 5px 2px rgb(53, 52, 52);">
+                </>
+            </form>
+            <div id="authButtons">
+                <button id="login-button">Login</button>
+                <button id="signup-button">Sign-Up</button>
+            </div>
         </div>
     </div>
-    <div id="middle-container">
-        <div id="stats-container">
-            <h2 id="points">Points: <span id="underline1" style="text-decoration: underline;">0</span></h2>
-            <h2 id="sharksKilled">Sharks Killed: <span id="underline2" style="text-decoration: underline;">0</span></h2>
-            <h2 id="difLevel">Difficulty Level: <span id="underline4" style="text-decoration: underline;"></span></h2>
-            <h2 id='timer'>Timer: <span id="underline3" style="text-decoration: underline;">0</span></h2>
+</div>
+
+<div id="middle-container">
+    <div id="stats-container">
+        <h2 id="points">Points: <span id="underline1" style="text-decoration: underline;">0</span></h2>
+        <h2 id="sharksKilled">Sharks Killed: <span id="underline2" style="text-decoration: underline;">0</span></h2>
+        <h2 id="difLevel">Difficulty Level: <span id="underline4" style="text-decoration: underline;"></span></h2>
+        <h2 id='timer'>Timer: <span id="underline3" style="text-decoration: underline;">0</span></h2>
+    </div>
+</div>
+<div id="bottom-container">
+    <div id="blackout"
+        style="background-image:url(https://i.ya-webdesign.com/images/transparent-gray.png); display:block;">
+    </div>
+    <div id="blackout2"
+        style="background-image:url(https://i.ya-webdesign.com/images/transparent-gray.png); display:block;">
+    </div>
+    <div id="left">
+        <button id="easy-button">EASY</button>
+        <button id="medium-button">MEDIUM</button>
+        <button id="hard-button">HARD</button>
+        <button id="myBtn" style="visibility: hidden;">Your Stats</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div id="show-stats">
+                    <div id="overall-stats"></div>
+                </div>
+                <div id="model-buttons">
+                    <button id="delete-user">Delete User</button>
+                    <button id="update-user">Update User</button>
+                    <form id='update-user-info' autocomplete="off">
+                        <input id="new-username" type='text' name='username' placeholder='New Username' />
+                        <input id="new-password" type='text' name='password' placeholder='New Password' />
+                        <input type='submit' id="updateUserSubmit-button" value="Update"
+                            style="font-family: 'Cinzel', serif;
+                        font-size: large; background-image: url(https://media.gettyimages.com/vectors/gold-background-metal-texture-vector-id617749020?s=612x612); border-radius: 15%; box-shadow: 0 0 5px 2px rgb(53, 52, 52);">
+                        </>
+                    </form>
+                </div>
+                <span class="close">&times;</span>
+
+                <div id="gamesTotal">
+                    <div id="all-games"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="bottom-container">
-        <div id="left">
-            <button id="easy-button">EASY</button>
-            <button id="medium-button">MEDIUM</button>
-            <button id="hard-button">HARD</button>
+    <div id="game-container">
+        <div id="moving-timer-box"></div>
+        <div id="red-moving-timer-box"></div>
+        <div id="speedWord"></div>
+        <div id="treasure-pop-up">
+            <h4>Santa Cruz Ruby +1000 </h4>
+            <img src="resources/ruby.png" id="ruby-gem">
         </div>
-        <div id="game-container">
-            <button id="start-button">START</button>
-            <div id="popUp-container">
-                <button id="next-level">Continue</button>
-                <button id="exit">RESTART</button>
-                <button id="view-stats">View Stats</button>
-            </div>
-            <div id="popUpFail-container">
-                <h2>GAME OVER</h2>
-                <button id="view2-stats">View Stats</button>
-                <button id="exit3">RESTART</button>
-            </div>
-            <div id="popUpStats-container">
-                <h2 id='finalPoints'><span id="underline5" style="text-decoration: underline;"></span></h2>
-                <h2 id='totalSharksKilled'><span id="underline6" style="text-decoration: underline;"></span></h2>
-                <button id="exit2">RESTART</button>
-            </div>
-            <img src="resources/diver.png" id="overlap">
-
+        <img src="resources/closeTreasure.png" id="closedTreasure">
+        <!-- <img src="resources/treasure.gif" id="closedTreasure"> -->
+        <button id="start-button">START</button>
+        <div id="popUp-container">
+            <button id="next-level">Continue</button>
+            <button id="exit">RESTART</button>
+            <button id="view-stats">View Stats</button>
         </div>
-
+        <div id="popUpFail-container">
+            <h2>GAME OVER</h2>
+            <button id="view2-stats">View Stats</button>
+            <button id="exit3">RESTART</button>
+        </div>
+        <div id="popUpStats-container">
+            <h2 id='finalPoints'>Points:<span id="underline5" style="text-decoration: underline;">0lkajs</span></h2>
+            <h2 id='totalSharksKilled'>Sharks Killed:<span id="underline6"
+                    style="text-decoration: underline;">08ohub</span></h2>
+            <button id="exit2">RESTART</button>
+        </div>
+        <img src="resources/diver.png" id="overlap">
     </div>
-
-
-    <script type="module" src='main.js'></script>
+</div>
+<script type="module" src='main.js'></script>
 </body>
 
 </html>
