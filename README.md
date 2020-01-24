@@ -69,7 +69,7 @@ Each level varies in difficulty through the following properties:
     
 Sharks begin to swim towards the diver. The objective is type the letters on the red shark. Each letter is checked for correctness and turns green upon meeting this condition. Once the whole word is correct, the shark is removed (no need to press enter), and the next shark turns red. Kill all the sharks on the screen before they reach the diver. Even if time runs out, you must kill all the sharks. 
 
-![Screenshot](level1.png)
+![Screenshot](firstlevel.png)
 
 ### Speed Round (Level 2)
 
@@ -80,6 +80,10 @@ After completing level 1, the user is brought to a bonus speed round. Type all t
 ### Boss Round (Level 3
 
 Toxic sharks and ghost piranhas alternate in a (1:1, 1:2, 1:3) ratio depending on difficulty. Toxic sharks are always 4 letters, that when not typed quickly morph. Ghost piranhas are grayed out until they are partially on the screen and have a single character on them. All creatures must be typed correctly before they reach the diver. 25 seconds after the beginning on the level, a boss shark emerges. The boss sends cannonballs concurrently that start halfway across the screen. Type all the cannonballs before they reach the diver to slowly kill the boss. A life bar at the top of the screen indicates the health of the boss. Time is unlimited now. Stay alive, and take down the boss to win the game! 
+
+![Screenshot](third1.png)
+
+![Screenshot](thirdlevel.png)
 
 ## Deployment
 
