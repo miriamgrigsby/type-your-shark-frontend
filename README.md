@@ -89,4 +89,4 @@ The app is fully deployed.
 
 ## Video Walk Through
 
-* [Walk Through Video]()
+* [Walk Through Video](https://www.youtube.com/watch?v=L80tapEubCQ)
