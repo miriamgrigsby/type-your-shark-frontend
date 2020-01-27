@@ -502,11 +502,11 @@ function game2Countdown() {
 
 function difficultyDeciderLevel3() {
     if (chosenDifficulty == "medium") {
-       return totalTime = 15
+        return totalTime = 15
     } else if (chosenDifficulty == "hard") {
         return totalTime = 12
     } else {
-       return totalTime = 19.0
+        return totalTime = 19.0
     }
 }
 
@@ -600,7 +600,7 @@ function typedSpeedWords(e) {
             speedWordContainer.innerHTML = ""
             speedIndex = 0
             speedArray = []
-            
+
             gamePointsInnerText()
             speedRoundDifficulty()
         }
@@ -775,7 +775,7 @@ function incomingBoss() {
     let cannon = null
     let int = 0
     let cannonContainer = document.createElement('div')
-    
+
     gameContainer.appendChild(bossShark)
     cannon = document.createElement("span")
     cannon.innerText = asciiArray[Math.round(Math.random() * (asciiArray.length - 2))]
@@ -858,7 +858,7 @@ function createCannonBall(cannon, cannonContainer) {
     cannonContainer.style.height = "50px"
     cannonContainer.style.position = "absolute"
     cannonContainer.style.boxShadow = "0 0 15px black"
-    
+
     cannonContainer.appendChild(cannon)
     gameContainer.appendChild(cannonContainer)
 }
@@ -998,7 +998,6 @@ async function creationOfPiranha(sharkSpeed) {
             }
         }
     }, 1, dotDiv, sharkSpeed, shark))
-    // piranhaNumber++
 }
 
 async function killShark(e) {
@@ -1017,7 +1016,6 @@ function killAllSharks(sharkFinder, sharkCharSpan, typedLetter) {
         if (textContent.length == sharkFinder.innerText.length) {
             if (textContent == sharkFinder.innerText) {
                 pointsTotal = parseInt(pointsTotal) + parseInt(sharkFinder.innerText.length)
-                // pointsTotal += parseInt(sharkFinder.innerText.length)
                 sharksTotal++
                 gameSharksKilled.innerText = " " + sharksTotal
                 gamePointsInnerText()
